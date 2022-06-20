@@ -11,10 +11,10 @@
 <body>
 
     <h1 style="font-size:3rem;text-align:center">
-    BMI為 <?=$_GET['bmi'];?>
+        BMI為 <?= $_GET['bmi']; ?>
     </h1>
     <h2 style="font-size:3rem;text-align:center">
-    <?=$_GET['result'];?>
+        <?= $_GET['result']; ?>
     </h2>
     <div style="font-size:3rem;text-align:center">
         <a href="bmi.html"><button>回到BMI計算機</button></a>

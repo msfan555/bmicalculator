@@ -1,7 +1,13 @@
 <?php
 
-$height=$_GET['height'];
-$weight=$_GET['weight'];
+if(empty($_GET)){ //判斷$_GET是否為空，若為空代表是以POST方式傳送
+    $height=$_POST['height'];
+    $weight=$_POST['weight'];
+}else{
+    $height=$_GET['height'];
+    $weight=$_GET['weight'];
+}
+
 
 $bmi=round($weight/(($height/100)*($height/100)),1);
 
