@@ -10,6 +10,11 @@
 
 <body>
     <h1>會員登入</h1>
+    <?php
+    if(!empty($_GET['error'])){
+        echo "<h4 style='color:red'>帳號或密碼錯誤</h4>";
+    }
+    ?>
     <form action="chklogin.php" method="post">
         <table>
             <tr>
