@@ -8,6 +8,8 @@
 </head>
 <body>
     <h1>歡迎 <?=$_COOKIE['user'];?></h1>
+    <a href="index.php">回首頁</a>
+    <a href="logout.php">登出</a>
     
 </body>
 </html>
